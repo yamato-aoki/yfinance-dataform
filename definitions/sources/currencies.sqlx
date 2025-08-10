@@ -1,0 +1,10 @@
+config {
+  type: "declaration",
+  schema: "yfinance_analytics",
+  name: "currencies"
+}
+
+SELECT
+  currency_id,
+  currency_name
+FROM `yfinance_analytics.currencies`

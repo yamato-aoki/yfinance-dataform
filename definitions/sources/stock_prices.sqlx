@@ -1,8 +1,7 @@
 config {
-  type: "table",
+  type: "declaration",
   schema: "yfinance_analytics",
-  name: "stock_prices",
-  tags: ["fact"]
+  name: "stock_prices"
 }
 
 SELECT

@@ -1,8 +1,7 @@
 config {
-  type: "table",
+  type: "declaration",
   schema: "yfinance_analytics",
-  name: "tickers",
-  tags: ["master"]
+  name: "tickers"
 }
 
 SELECT
