@@ -35,7 +35,7 @@ dataform/
 
 ## 構成図（イメージ）
 
-![構成図](docs/stock_prices_analysis.png)
+<img src="docs/stock_prices_analysis_dependencies.png" alt="構成図" width="600" />
 
 ---
 
