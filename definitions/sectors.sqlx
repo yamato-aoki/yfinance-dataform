@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  schema: "yfinance_analytics",
+  name: "sectors",
+  tags: ["master"]
+}
+
+SELECT
+  sector_id,
+  sector_name
+FROM `yfinance_analytics.sectors`

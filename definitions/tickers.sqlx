@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  schema: "yfinance_analytics",
+  name: "tickers",
+  tags: ["master"]
+}
+
+SELECT
+  ticker_id,
+  company_name,
+  sector_id,
+  currency_id,
+  country_id,
+  is_index
+FROM
+  `yfinance_analytics.tickers`

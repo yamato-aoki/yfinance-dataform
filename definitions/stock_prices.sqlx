@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  schema: "yfinance_analytics",
+  name: "stock_prices",
+  tags: ["fact"]
+}
+
+SELECT
+  ticker_id,
+  DATE(date) AS date,
+  open_price,
+  high_price,
+  low_price,
+  close_price,
+  volume
+FROM `yfinance_analytics.stock_prices`
