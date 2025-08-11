@@ -42,7 +42,7 @@ dataform/
 ## 実装予定
 
 - [yfinance_gcp_project2](https://github.com/yamato-aoki/yfinance_gcp_project2) の変換処理 [`transform_to_analytics.py`](https://github.com/yamato-aoki/yfinance_gcp_project2/blob/main/utils/etl/transform_to_analytics.py) にて行っていた **非正規化ビューの生成** を、今後 Dataform 側で置き換え・管理する構成へ移行予定
-
+- 実行トリガーについては、**API（Cloud Functions）または Cloud Dataflow の活用を検討中**
 
 ---
 
