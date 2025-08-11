@@ -28,7 +28,7 @@ dataform/
 | `tickers`           | declaration | 銘柄マスタ（ティッカーの属性情報）              |
 | `sectors`           | declaration | 業種マスタ（各ティッカーの属する業種）          |
 | `currencies`        | declaration | 通貨マスタ（ティッカーごとの通貨情報）          |
-| `stock_prices_analysis` | table  | 上記を統合した非正規化ビュー。分析用途に最適化 |
+| `stock_prices_analysis` | table  | 上記を統合した非正規化テーブル。分析用途に最適化 |
 
 
 ---
@@ -41,7 +41,7 @@ dataform/
 
 ## 実装予定
 
-- [yfinance_gcp_project2](https://github.com/yamato-aoki/yfinance_gcp_project2) の変換処理 [`transform_to_analytics.py`](https://github.com/yamato-aoki/yfinance_gcp_project2/blob/main/utils/etl/transform_to_analytics.py) にて行っていた **非正規化ビューの生成** を、今後 Dataform 側で置き換え・管理する構成へ移行予定
+- [yfinance_gcp_project2](https://github.com/yamato-aoki/yfinance_gcp_project2) の変換処理 [`transform_to_analytics.py`](https://github.com/yamato-aoki/yfinance_gcp_project2/blob/main/utils/etl/transform_to_analytics.py) にて行っていた **分析用の非正規化テーブルの生成** を、今後 Dataform 側で置き換え・管理する構成へ移行予定
 - 実行トリガーについては、Dataform API を Cloud Functions 経由で呼び出す構成 または Cloud Dataflow の活用を検討中です。
 
 ---
